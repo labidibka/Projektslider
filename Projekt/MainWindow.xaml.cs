@@ -22,6 +22,7 @@ namespace Projekt
             Czarny.Checked += KolorTekstu;
             Czerwony.Checked += KolorTekstu;
             Zielony.Checked += KolorTekstu;
+            Slider.ValueChanged += GruboscTekstu;
 
         }
         private void KolorTekstu(object sender, RoutedEventArgs e) 
@@ -40,7 +41,7 @@ namespace Projekt
             }
 
         }
-        private void GruboscTekstu() 
+        private void GruboscTekstu(object sender, RoutedEventArgs e) 
         {
 
         }

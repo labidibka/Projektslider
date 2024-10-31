@@ -20,8 +20,8 @@
         </StackPanel>
         <StackPanel VerticalAlignment="Top" Margin="30,30,0,0">
             <CheckBox Content="Pogrubienie" x:Name="Pogrubienie"></CheckBox>
-            <CheckBox></CheckBox>
-            <CheckBox></CheckBox>
+            <CheckBox Content="Kursywa" x:Name="Kursywa"></CheckBox>
+            <CheckBox Content="Podkreslenie" x:Name="Podkreslenie"></CheckBox>
         </StackPanel>
         
     </Grid>

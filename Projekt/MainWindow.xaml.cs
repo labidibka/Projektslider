@@ -53,7 +53,21 @@ namespace Projekt
         }
         private void StylTekstu( object sender, RoutedEventArgs e) 
         {
+            
+            TextBox.FontWeight = Pogrubienie.IsChecked == true ? FontWeights.Bold : FontWeights.Normal;
 
+            
+            TextBox.FontStyle = Kursywa.IsChecked == true ? FontStyles.Italic : FontStyles.Normal;
+
+            
+            if (Podkreslenie.IsChecked == true)
+            {
+                TextBox.TextDecorations = TextDecorations.Underline;
+            }
+            else
+            {
+                TextBox.TextDecorations = null;
+            }
         }
     }
     

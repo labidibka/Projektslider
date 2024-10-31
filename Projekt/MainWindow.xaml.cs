@@ -41,9 +41,9 @@ namespace Projekt
             }
 
         }
-        private void GruboscTekstu(object sender, RoutedEventArgs e) 
+        private void GruboscTekstu(object sender, RoutedPropertyChangedEventArgs<double> e) 
         {
-
+            TextBox.FontSize = Slider.Value;
         }
         private void StylTekstu() 
         {

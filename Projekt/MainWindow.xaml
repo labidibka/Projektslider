@@ -16,13 +16,20 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Slider Orientation="Vertical" Height="205"></Slider>
+            <Slider Orientation="Vertical" Height="205" TickFrequency="5" TickPlacement="BottomRight" Maximum="200" IsSnapToTickEnabled="True"></Slider>
         </StackPanel>
         <StackPanel VerticalAlignment="Top" Margin="30,30,0,0">
             <CheckBox Content="Pogrubienie" x:Name="Pogrubienie"></CheckBox>
             <CheckBox Content="Kursywa" x:Name="Kursywa"></CheckBox>
             <CheckBox Content="Podkreslenie" x:Name="Podkreslenie"></CheckBox>
+         </StackPanel>
+        <StackPanel>
+            
         </StackPanel>
         
+           
+        
+
+
     </Grid>
 </Window>

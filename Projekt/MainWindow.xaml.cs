@@ -19,6 +19,23 @@ namespace Projekt
         public MainWindow()
         {
             InitializeComponent();
+            Czarny.Checked += KolorTekstu;
+            Czerwony.Checked += KolorTekstu;
+            Zielony.Checked += KolorTekstu
+
+        }
+        private void KolorTekstu(object sender, RoutedEventArgs e) 
+        {
+
+        }
+        private void GruboscTekstu() 
+        {
+
+        }
+        private void StylTekstu() 
+        {
+
         }
     }
+    
 }

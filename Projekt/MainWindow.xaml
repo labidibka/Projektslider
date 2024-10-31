@@ -8,15 +8,13 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="500"></ColumnDefinition>
-            <ColumnDefinition Width="300"></ColumnDefinition>
+            <ColumnDefinition Width="800"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="225"></RowDefinition>
-            <RowDefinition Height="225"></RowDefinition>
+            <RowDefinition Height="450"></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Slider Orientation="Vertical" Height="205" TickFrequency="5" TickPlacement="BottomRight" Maximum="200" IsSnapToTickEnabled="True" x:Name="Slider"></Slider>
+        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top">
+            <Slider Orientation="Vertical" Height="400" TickFrequency="5" TickPlacement="BottomRight" Maximum="200" IsSnapToTickEnabled="True" x:Name="Slider"></Slider>
         </StackPanel>
         <StackPanel VerticalAlignment="Top" Margin="30,30,0,0">
             <CheckBox Content="Pogrubienie" x:Name="Pogrubienie"></CheckBox>
@@ -29,12 +27,14 @@
             <RadioButton  Content="Kolor Zielony" x:Name="Zielony"></RadioButton>
         </StackPanel>
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,130,0,0">
-            <TextBox Width="400" x:Name="TextBox"></TextBox>
+            <TextBox Width="400" x:Name="TextBox" SpellCheck.IsEnabled="True" Language="pl-PL">
+                <TextBox.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="LightBlue" Offset="0.0"/>
+                    <GradientStop Color="LightGreen" Offset="1.0"/>
+                </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
         </StackPanel>
-        
-           
-        
-
-
     </Grid>
 </Window>

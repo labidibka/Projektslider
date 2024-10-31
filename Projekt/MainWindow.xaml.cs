@@ -21,11 +21,23 @@ namespace Projekt
             InitializeComponent();
             Czarny.Checked += KolorTekstu;
             Czerwony.Checked += KolorTekstu;
-            Zielony.Checked += KolorTekstu
+            Zielony.Checked += KolorTekstu;
 
         }
         private void KolorTekstu(object sender, RoutedEventArgs e) 
         {
+            if (Czarny.IsChecked == true)
+            {
+                TextBox.Foreground = Brushes.Black;
+            }
+            else if (Czerwony.IsChecked == true)
+            {
+                TextBox.Foreground = Brushes.Red;
+            }
+            else if(Zielony.IsChecked == true) 
+            {
+                TextBox.Foreground= Brushes.Green;
+            }
 
         }
         private void GruboscTekstu() 

@@ -8,15 +8,15 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="400"></ColumnDefinition>
-            <ColumnDefinition Width="400"></ColumnDefinition>
+            <ColumnDefinition Width="500"></ColumnDefinition>
+            <ColumnDefinition Width="300"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="225"></RowDefinition>
             <RowDefinition Height="225"></RowDefinition>
         </Grid.RowDefinitions>
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center">
-            <Slider Orientation="Vertical" Height="205" TickFrequency="5" TickPlacement="BottomRight" Maximum="200" IsSnapToTickEnabled="True"></Slider>
+            <Slider Orientation="Vertical" Height="205" TickFrequency="5" TickPlacement="BottomRight" Maximum="200" IsSnapToTickEnabled="True" x:Name="Slider"></Slider>
         </StackPanel>
         <StackPanel VerticalAlignment="Top" Margin="30,30,0,0">
             <CheckBox Content="Pogrubienie" x:Name="Pogrubienie"></CheckBox>
@@ -24,9 +24,12 @@
             <CheckBox Content="Podkreslenie" x:Name="Podkreslenie"></CheckBox>
          </StackPanel>
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,90,0,0">
-            <RadioButton Padding="10,0,0,0"></RadioButton>
-            <RadioButton Padding="10,0,0,0"></RadioButton>
-            <RadioButton Padding="10,0,0,0"></RadioButton>
+            <RadioButton  Content="Kolor Czarny" x:Name="Czarny"></RadioButton>
+            <RadioButton  Content="Kolor Czerwony" x:Name="Czerwony"></RadioButton>
+            <RadioButton  Content="Kolor Zielony" x:Name="Zielony"></RadioButton>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,130,0,0">
+            <TextBox Width="400" x:Name="TextBox"></TextBox>
         </StackPanel>
         
            

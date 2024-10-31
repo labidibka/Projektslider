@@ -23,6 +23,12 @@ namespace Projekt
             Czerwony.Checked += KolorTekstu;
             Zielony.Checked += KolorTekstu;
             Slider.ValueChanged += GruboscTekstu;
+            Pogrubienie.Checked += StylTekstu;
+            Pogrubienie.Unchecked += StylTekstu;
+            Kursywa.Checked += StylTekstu;
+            Kursywa.Unchecked += StylTekstu;
+            Podkreslenie.Checked += StylTekstu;
+            Podkreslenie.Unchecked += StylTekstu;
 
         }
         private void KolorTekstu(object sender, RoutedEventArgs e) 
@@ -43,9 +49,9 @@ namespace Projekt
         }
         private void GruboscTekstu(object sender, RoutedPropertyChangedEventArgs<double> e) 
         {
-            TextBox.FontSize = Slider.Value;
+            TextBox.FontSize = Slider.Value + 1;
         }
-        private void StylTekstu() 
+        private void StylTekstu( object sender, RoutedEventArgs e) 
         {
 
         }

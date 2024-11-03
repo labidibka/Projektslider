@@ -29,7 +29,20 @@ namespace Projekt
             Kursywa.Unchecked += StylTekstu;
             Podkreslenie.Checked += StylTekstu;
             Podkreslenie.Unchecked += StylTekstu;
+            
 
+        }
+        private void lewo(object sender, EventArgs e) 
+        {
+            TextBox.TextAlignment = TextAlignment.Left;
+        }
+        private void Srodek(object sender, EventArgs e)
+        {
+            TextBox.TextAlignment = TextAlignment.Center;
+        }
+        private void Prawo(object sender, EventArgs e) 
+        {
+            TextBox.TextAlignment = TextAlignment.Right;
         }
         private void KolorTekstu(object sender, RoutedEventArgs e) 
         {

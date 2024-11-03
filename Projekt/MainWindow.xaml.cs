@@ -33,8 +33,25 @@ namespace Projekt
             Bialo.Checked += KolorTla;
             Niebieski.Checked += KolorTla;
             Gradient.Checked += KolorTla;
+            Arial.Checked += RodzinaCzcionki;
+            David.Checked += RodzinaCzcionki;
+            Verdana.Checked += RodzinaCzcionki;
             
 
+        }
+        private void RodzinaCzcionki(object sender, RoutedEventArgs e) 
+        {
+            if (Arial.IsChecked == true) {
+                TextBox.FontFamily = new FontFamily("Arial");
+              }
+            else if (David.IsChecked == true) {
+                TextBox.FontFamily = new FontFamily("David");
+            }
+            else if(Verdana.IsChecked == true) 
+            {
+                TextBox.FontFamily = new FontFamily("Verdana");
+            }
+            
         }
         private void KolorTla(object sender, RoutedEventArgs e) 
         {

@@ -21,24 +21,29 @@
             <CheckBox Content="Kursywa" x:Name="Kursywa"></CheckBox>
             <CheckBox Content="Podkreslenie" x:Name="Podkreslenie"></CheckBox>
          </StackPanel>
-        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,90,0,0">
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,120,0,0">
             <RadioButton  Content="Kolor Czarny" x:Name="Czarny"></RadioButton>
             <RadioButton  Content="Kolor Czerwony" x:Name="Czerwony"></RadioButton>
             <RadioButton  Content="Kolor Zielony" x:Name="Zielony"></RadioButton>
         </StackPanel>
-        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="380,90,0,0">
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,100,0,0">
             <RadioButton Content="Tło Zółty" x:Name="zolty"></RadioButton>
             <RadioButton Content="Tło Białe" x:Name="Bialo"></RadioButton>
             <RadioButton Content="Tło Niebieskie" x:Name="Niebieski"></RadioButton>
             <RadioButton Content="Gradient Po Przekątnych" x:Name="Gradient"></RadioButton>
         </StackPanel>
-        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,160,0,0">
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,80,0,0">
+            <TextBlock Text="Font Family: "></TextBlock>
+            <RadioButton Content="Arial"  x:Name="Arial"></RadioButton>
+            <RadioButton Content="Verdana" x:Name="Verdana"></RadioButton>
+            <RadioButton Content="David"  x:Name="David"></RadioButton>
+        </StackPanel>
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,190,0,0">
             <Button Content="Wyrównanie Lewo" Click="lewo" Margin="0,0,10,0"></Button>
             <Button Content="Wyrównanie Środek" Click="Srodek" Margin="0,0,10,0"></Button>
             <Button Content="Wyrównanie Prawo"  Click="Prawo" Margin="0,0,10,0"></Button>
-            
         </StackPanel>
-        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,130,0,0">
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,150,0,0">
             <TextBox Width="400" x:Name="TextBox" SpellCheck.IsEnabled="True" Language="pl-PL">
                 <TextBox.Background>
                 <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">

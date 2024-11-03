@@ -32,6 +32,7 @@ namespace Projekt
             zolty.Checked += KolorTla;
             Bialo.Checked += KolorTla;
             Niebieski.Checked += KolorTla;
+            Gradient.Checked += KolorTla;
             
 
         }
@@ -45,10 +46,24 @@ namespace Projekt
             {
                 TextBox.Background = Brushes.White;
             }
-            else if (Niebieski.IsChecked == true) 
+            else if (Niebieski.IsChecked == true)
             {
-                TextBox.Background= Brushes.Blue;
+                TextBox.Background = Brushes.Blue;
             }
+            else if (Gradient.IsChecked == true)
+            {
+                var gradientBrush = new LinearGradientBrush
+                {
+                    StartPoint = new Point(0, 0),
+                    EndPoint = new Point(1, 1)
+                };
+
+                gradientBrush.GradientStops.Add(new GradientStop(Colors.Red, 0.0));
+                gradientBrush.GradientStops.Add(new GradientStop(Colors.Blue, 1.0));
+
+                TextBox.Background = gradientBrush;
+            }
+
         }
         private void lewo(object sender, EventArgs e) 
         {

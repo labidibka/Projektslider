@@ -29,8 +29,26 @@ namespace Projekt
             Kursywa.Unchecked += StylTekstu;
             Podkreslenie.Checked += StylTekstu;
             Podkreslenie.Unchecked += StylTekstu;
+            zolty.Checked += KolorTla;
+            Bialo.Checked += KolorTla;
+            Niebieski.Checked += KolorTla;
             
 
+        }
+        private void KolorTla(object sender, RoutedEventArgs e) 
+        {
+            if (zolty.IsChecked == true)
+            {
+                TextBox.Background = Brushes.Yellow;
+            }
+            else if (Bialo.IsChecked == true)
+            {
+                TextBox.Background = Brushes.White;
+            }
+            else if (Niebieski.IsChecked == true) 
+            {
+                TextBox.Background= Brushes.Blue;
+            }
         }
         private void lewo(object sender, EventArgs e) 
         {

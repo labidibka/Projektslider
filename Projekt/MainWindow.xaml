@@ -27,7 +27,7 @@
             <RadioButton  Content="Kolor Zielony" x:Name="Zielony"></RadioButton>
         </StackPanel>
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="380,90,0,0">
-            <RadioButton Content="Tło Czarne" x:Name="czarny"></RadioButton>
+            <RadioButton Content="Tło Zółty" x:Name="zolty"></RadioButton>
             <RadioButton Content="Tło Białe" x:Name="Bialo"></RadioButton>
             <RadioButton Content="Tło Niebieskie" x:Name="Niebieski"></RadioButton>
         </StackPanel>

@@ -26,6 +26,11 @@
             <RadioButton  Content="Kolor Czerwony" x:Name="Czerwony"></RadioButton>
             <RadioButton  Content="Kolor Zielony" x:Name="Zielony"></RadioButton>
         </StackPanel>
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="380,90,0,0">
+            <RadioButton Content="Tło Czarne" x:Name="czarny"></RadioButton>
+            <RadioButton Content="Tło Białe" x:Name="Bialo"></RadioButton>
+            <RadioButton Content="Tło Niebieskie" x:Name="Niebieski"></RadioButton>
+        </StackPanel>
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,160,0,0">
             <Button Content="Wyrównanie Lewo" Click="lewo" Margin="0,0,10,0"></Button>
             <Button Content="Wyrównanie Środek" Click="Srodek" Margin="0,0,10,0"></Button>

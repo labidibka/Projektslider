@@ -36,8 +36,34 @@ namespace Projekt
             Arial.Checked += RodzinaCzcionki;
             David.Checked += RodzinaCzcionki;
             Verdana.Checked += RodzinaCzcionki;
-            
 
+            Czarny.Checked += Pasek;
+            Czerwony.Checked += Pasek;
+            Zielony.Checked += Pasek;
+            Slider.ValueChanged += Pasek;
+            Pogrubienie.Checked += Pasek;
+            Pogrubienie.Unchecked += Pasek;
+            Kursywa.Checked += Pasek;
+            Kursywa.Unchecked += Pasek;
+            Podkreslenie.Checked += Pasek;
+            Podkreslenie.Unchecked += Pasek;
+            zolty.Checked += Pasek;
+            Bialo.Checked += Pasek;
+            Niebieski.Checked += Pasek;
+            Gradient.Checked += Pasek;
+            Arial.Checked += Pasek;
+            David.Checked += Pasek;
+            Verdana.Checked += Pasek;
+
+
+        }
+        private void Pasek(object sender, RoutedEventArgs e) 
+        {
+            int Postep = 0;
+
+            Postep += Kursywa.IsChecked == true ? 1 : 0;
+            Postep += Podkreslenie.IsChecked == true ? 1 : 0;
+            Postep += Pogrubienie.IsChecked == true ? 1 : 0;
         }
         private void RodzinaCzcionki(object sender, RoutedEventArgs e) 
         {

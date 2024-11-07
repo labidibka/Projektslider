@@ -59,7 +59,7 @@ namespace Projekt
         }
         private void Pasek(object sender, RoutedEventArgs e)
         {
-            int Postep = 0;
+            int Postep = 2;
 
             Postep += Kursywa.IsChecked == true ? 1 : 0;
             Postep += Podkreslenie.IsChecked == true ? 1 : 0;
@@ -77,7 +77,6 @@ namespace Projekt
             {
                 Postep += 1;
             }
-
             Progressbar.Value = Postep;
 
         }
@@ -127,6 +126,7 @@ namespace Projekt
         private void lewo(object sender, EventArgs e) 
         {
             TextBox.TextAlignment = TextAlignment.Left;
+           
         }
         private void Srodek(object sender, EventArgs e)
         {

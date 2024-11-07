@@ -69,7 +69,16 @@ namespace Projekt
             {
                 Postep += 1;
             }
+            if (zolty.IsChecked == true || Bialo.IsChecked == true || Niebieski.IsChecked == true || Gradient.IsChecked == true) 
+            {
+                Postep += 1;
+            }
+            if (Arial.IsChecked == true || David.IsChecked == true || Verdana.IsChecked == true) 
+            {
+                Postep += 1;
+            }
 
+            Progressbar.Value = Postep;
 
         }
         private void RodzinaCzcionki(object sender, RoutedEventArgs e) 

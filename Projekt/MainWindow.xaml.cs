@@ -57,13 +57,20 @@ namespace Projekt
 
 
         }
-        private void Pasek(object sender, RoutedEventArgs e) 
+        private void Pasek(object sender, RoutedEventArgs e)
         {
             int Postep = 0;
 
             Postep += Kursywa.IsChecked == true ? 1 : 0;
             Postep += Podkreslenie.IsChecked == true ? 1 : 0;
             Postep += Pogrubienie.IsChecked == true ? 1 : 0;
+
+            if (Czarny.IsChecked == true || Czerwony.IsChecked == true || Zielony.IsChecked == true) 
+            {
+                Postep += 1;
+            }
+
+
         }
         private void RodzinaCzcionki(object sender, RoutedEventArgs e) 
         {

@@ -43,6 +43,9 @@
             <Button Content="Wyrównanie Środek" Click="Srodek" Margin="0,0,10,0"></Button>
             <Button Content="Wyrównanie Prawo"  Click="Prawo" Margin="0,0,10,0"></Button>
         </StackPanel>
+        <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,240,0,0">
+            <ProgressBar Width="400" Height="20" Minimum="0" Maximum="7"></ProgressBar>
+        </StackPanel>
         <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Margin="30,150,0,0">
             <TextBox Width="400" x:Name="TextBox" SpellCheck.IsEnabled="True" Language="pl-PL">
                 <TextBox.Background>
